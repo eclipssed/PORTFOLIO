@@ -109,7 +109,7 @@ const About = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.5 }}
-            className="flex items-center gap-3 sm:gap-5"
+            className="flex items-center justify-center flex-wrap gap-3 sm:gap-5"
           >
             {toolsData.map((tool, index) => (
               <motion.li
