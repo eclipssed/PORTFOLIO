@@ -100,30 +100,36 @@ export const workData = [
     bgImage: "/shadcn.png",
     link: "https://shadcn-practice-iota.vercel.app/",
   },
-  {
-    title: "Ecommerce App",
-    description: "Production Ready",
-    bgImage: "/work-2.png",
-    link: "/",
-  },
-  {
-    title: "Twitter Clone",
-    description: "Fully Functional",
-    bgImage: "/work-3.png",
-    link: "/",
-  },
-  {
-    title: "School Management",
-    description: "Production Ready",
-    bgImage: "/work-4.png",
-    link: "/",
-  },
+  // {
+  //   title: "Ecommerce App",
+  //   description: "Production Ready",
+  //   bgImage: "/work-2.png",
+  //   link: "#work",
+  // },
+  // {
+  //   title: "Twitter Clone",
+  //   description: "Fully Functional",
+  //   bgImage: "/work-3.png",
+  //   link: "#work",
+  // },
+  // {
+  //   title: "School Management",
+  //   description: "Production Ready",
+  //   bgImage: "/work-4.png",
+  //   link: "#work",
+  // },
   {
     title: "Img Upscaler",
     description: "Upscale Images with AI",
     bgImage: "/img-upscaler.png",
     link: "https://img-upscaler.vercel.app/",
   },
+  // {
+  //   title: "Editable portfolio",
+  //   description: "Upscale Images with AI",
+  //   bgImage: "/img-upscaler.png",
+  //   link: "https://img-upscaler.vercel.app/",
+  // },
 ];
 
 export const serviceData = [
