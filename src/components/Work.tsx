@@ -4,6 +4,7 @@ import { workData } from "@/assets/assets";
 import { Send } from "lucide-react";
 import React from "react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const Work = () => {
   return (
@@ -47,7 +48,7 @@ const Work = () => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-center gap-6 my-10"
       >
         {workData.map(({ title, description, bgImage, link }, index) => (
-          <motion.a key={index} href={link}>
+          <Link key={index} href={link}>
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
@@ -64,7 +65,7 @@ const Work = () => {
                 </div>
               </div>
             </motion.div>
-          </motion.a>
+          </Link>
         ))}
       </motion.div>
       {/* <motion.a
