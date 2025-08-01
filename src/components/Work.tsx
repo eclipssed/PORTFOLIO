@@ -2,9 +2,9 @@
 
 import { workData } from "@/assets/assets";
 import { ArrowRight, Send } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const Work = () => {
   return (
@@ -44,26 +44,28 @@ const Work = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-10"
+        // className="flex my-10"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-center gap-6 my-10"
       >
-        {workData.map(({ title, description, bgImage }, index) => (
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg cursor-pointer group relative"
-            key={index}
-            style={{ backgroundImage: `url(${bgImage})` }}
-          >
-            <div className="bg-card text-card-foreground w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 shadow-sm">
-              <div>
-                <h2 className="font-semibold">{title}</h2>
-                <p className="text-sm text-muted-foreground">{description}</p>
+        {workData.map(({ title, description, bgImage, link }, index) => (
+          <Link key={index} href={link}>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg cursor-pointer group relative"
+              style={{ backgroundImage: `url(${bgImage})` }}
+            >
+              <div className="bg-card text-card-foreground w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 shadow-sm">
+                <div>
+                  <h2 className="font-semibold">{title}</h2>
+                  <p className="text-sm text-muted-foreground">{description}</p>
+                </div>
+                <div className="border rounded-full border-border w-9 aspect-square flex items-center justify-center group-hover:bg-lime-300 group-hover:text-black transition">
+                  <Send className="w-4" />
+                </div>
               </div>
-              <div className="border rounded-full border-border w-9 aspect-square flex items-center justify-center group-hover:bg-lime-300 group-hover:text-black transition">
-                <Send className="w-4" />
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </Link>
         ))}
       </motion.div>
       <motion.a

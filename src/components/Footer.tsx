@@ -1,6 +1,4 @@
-import { assets } from "@/assets/assets";
-import { Github, Instagram, Linkedin, Mail, Youtube } from "lucide-react";
-import Image from "next/image";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 

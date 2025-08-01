@@ -58,7 +58,7 @@ const About = () => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-ovo!">
-            I am an experienced full stack developer with over a decade of
+            I am an experienced full stack web developer with over a decade of
             professional experitse in this field.Throughout my career I have had
             the privilige of collaborating with prestigious oranistaions,
             contirbuting to their success and growth.
@@ -78,7 +78,7 @@ const About = () => {
           border-[0.5px] border-gray-400 dark:border-gray-600
           rounded-xl p-6 cursor-pointer
           transition duration-500 transform
-          bg-card hover:shadow-lightCardShadow dark:hover:shadow-darkCardShadow
+          bg-card hover:shadow-lightCardShadow dark:hover:shadow-darkCardShadow 
           hover:bg-lightHover dark:hover:bg-darkHover
           hover:-translate-y-1
           

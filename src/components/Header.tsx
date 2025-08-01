@@ -30,7 +30,7 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo!"
       >
-        Hi! I'm Furqan Mirza{" "}
+        Hi! I'm Muhammad Furqan{" "}
         <Image src={assets.hand_icon} alt="hand icon" className="w-6" />
       </motion.h3>
       <motion.h1
@@ -47,8 +47,9 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto font-ovo!"
       >
-        I am full stack developer from Kohat, Pakistan with 2 years of
-        experience in multiple companeis like Microsoft, Tesla and Apple.
+        I am full stack web developer from Kohat, Pakistan with over 2 years of
+        experience in multiple projects like ecommerce, blogs and social media
+        apps.
       </motion.p>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
@@ -68,7 +69,7 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
-          href={"/sample-resume.pdf"}
+          href={"/furqan-cv.pdf"}
           download={true}
           className="px-10 py-3 border rounded-full border-gray-500 text-black flex items-center gap-2 dark:text-white dark:border-white"
         >

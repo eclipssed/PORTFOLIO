@@ -36,8 +36,17 @@ import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import { Code2, GraduationCap, BriefcaseBusiness } from "lucide-react";
+import next_js1 from "./next_js1.png";
+import react_js from "./react_js.png";
+import node_js from "./node_js.png";
+import typescript from "./typescript.png";
+import javascript from "./javascript.png";
+import backend1 from "./backend1.png";
+import optimization from "./optimization.png";
+import hosting from "./hosting.png";
 
 export const assets = {
+  backend1,
   user_image,
   code_icon,
   code_icon_dark,
@@ -75,56 +84,69 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  next_js1,
+  react_js,
+  node_js,
+  typescript,
+  javascript,
+  optimization,
+  hosting,
 };
 
 export const workData = [
   {
-    title: "Frontend project",
+    title: "Dashboard UI",
     description: "Web Design",
-    bgImage: "/work-1.png",
+    bgImage: "/shadcn1.png",
+    link: "https://shadcn-practice-iota.vercel.app/",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Ecommerce App",
+    description: "Production Ready",
     bgImage: "/work-2.png",
+    link: "/",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Twitter Clone",
+    description: "Fully Functional",
     bgImage: "/work-3.png",
+    link: "/",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "School Management",
+    description: "Production Ready",
     bgImage: "/work-4.png",
+    link: "/",
   },
 ];
 
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
-  },
-  {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    title: "Frontend Development",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Building fast, responsive, and accessible UIs using React and Next.js with modern tools like Tailwind CSS.",
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: assets.backend1, // Replace with a suitable icon
+    title: "Backend Development",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "Creating scalable APIs and server-side logic with Node.js, Express, and integration with databases like MongoDB",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    icon: assets.optimization, // Replace with a suitable icon
+    title: "SEO & Performance Optimization",
+    description:
+      "Improving Core Web Vitals, implementing best practices for SEO, and optimizing load speed in Next.js apps.",
+    link: "",
+  },
+  {
+    icon: assets.hosting, // Replace with a suitable icon
+    title: "Deployment & Hosting",
+    description:
+      "Deploying applications using Vercel, Netlify, or traditional servers with CI/CD pipelines for seamless production workflows.",
     link: "",
   },
 ];
@@ -133,17 +155,18 @@ export const infoList = [
   {
     icon: Code2,
     title: "Languages",
-    description: "HTML, CSS, JavaScript, React.js, Next.js",
+    description:
+      "JavaScript, React.js, Next.js, Typescript, Tailwind, Node.js, MongoDB ",
   },
   {
     icon: GraduationCap,
     title: "Education",
-    description: "B.Tech in Computer Science",
+    description: "Matric Science, FSc Pre-Engineering, Bachelors Physics",
   },
   {
     icon: BriefcaseBusiness,
     title: "Projects",
-    description: "Built more than 5 projects",
+    description: "Built more than 5 complex projects",
   },
 ];
 
@@ -153,4 +176,9 @@ export const toolsData = [
   assets.mongodb,
   assets.figma,
   assets.git,
+  assets.next_js1,
+  assets.node_js,
+  assets.react_js,
+  assets.typescript,
+  assets.javascript,
 ];
