@@ -97,7 +97,7 @@ export const workData = [
   {
     title: "Dashboard UI",
     description: "Web Design",
-    bgImage: "/shadcn1.png",
+    bgImage: "/shadcn.png",
     link: "https://shadcn-practice-iota.vercel.app/",
   },
   {
@@ -118,6 +118,12 @@ export const workData = [
     bgImage: "/work-4.png",
     link: "/",
   },
+  {
+    title: "Img Upscaler",
+    description: "Upscale Images with AI",
+    bgImage: "/img-upscaler.png",
+    link: "https://img-upscaler.vercel.app/",
+  },
 ];
 
 export const serviceData = [
@@ -126,28 +132,28 @@ export const serviceData = [
     title: "Frontend Development",
     description:
       "Building fast, responsive, and accessible UIs using React and Next.js with modern tools like Tailwind CSS.",
-    link: "",
+    link: "#work",
   },
   {
     icon: assets.backend1, // Replace with a suitable icon
     title: "Backend Development",
     description:
       "Creating scalable APIs and server-side logic with Node.js, Express, and integration with databases like MongoDB",
-    link: "",
+    link: "#work",
   },
   {
     icon: assets.optimization, // Replace with a suitable icon
     title: "SEO & Performance Optimization",
     description:
       "Improving Core Web Vitals, implementing best practices for SEO, and optimizing load speed in Next.js apps.",
-    link: "",
+    link: "#work",
   },
   {
     icon: assets.hosting, // Replace with a suitable icon
     title: "Deployment & Hosting",
     description:
       "Deploying applications using Vercel, Netlify, or traditional servers with CI/CD pipelines for seamless production workflows.",
-    link: "",
+    link: "#work",
   },
 ];
 

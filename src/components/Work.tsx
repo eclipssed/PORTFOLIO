@@ -1,10 +1,9 @@
 "use client";
 
 import { workData } from "@/assets/assets";
-import { ArrowRight, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import React from "react";
 import { motion } from "motion/react";
-import Link from "next/link";
 
 const Work = () => {
   return (
@@ -48,7 +47,7 @@ const Work = () => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-center gap-6 my-10"
       >
         {workData.map(({ title, description, bgImage, link }, index) => (
-          <Link key={index} href={link}>
+          <motion.a key={index} href={link}>
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
@@ -65,10 +64,10 @@ const Work = () => {
                 </div>
               </div>
             </motion.div>
-          </Link>
+          </motion.a>
         ))}
       </motion.div>
-      <motion.a
+      {/* <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.1 }}
@@ -76,7 +75,7 @@ const Work = () => {
         className="w-max flex items-center justify-center gap-2 text-gray-700 dark:text-gray-300 border-[0.5px] border-gray-700 dark:border-gray-300 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover dark:hover:bg-darkHover duration-500"
       >
         Show more <ArrowRight className="w-4 dark:text-white" />
-      </motion.a>
+      </motion.a> */}
     </motion.div>
   );
 };

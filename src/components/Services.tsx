@@ -38,8 +38,8 @@ const Services = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo! text-gray-600 dark:text-gray-400"
       >
-        I am full stack developer from Kohat, Pakistan with 2 years of
-        experience in multiple companeis like Microsoft, Tesla and Apple.
+        I am a full-stack developer from Kohat, Pakistan, with 2 years of
+        experience working with frontend, backend, and database technologies.
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}
